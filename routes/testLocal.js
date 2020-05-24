@@ -12,7 +12,7 @@ const local = {
 router.get('/', function(req, res, next) {
     http.request(local, (result) => {
         result.on('data', chunk => {
-            res.send(chunk);
+            res.json(chunk);
         })
     }).end();
 });
