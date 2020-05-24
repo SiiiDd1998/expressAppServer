@@ -12,6 +12,8 @@ const local = {
 router.get('/', function(req, res, next) {
     http.request(local, (result) => {
         result.on('data', chunk => {
+            chunk = chunk.toString('utf8');
+            console.log(chunk);
             res.json(chunk);
         })
     }).end();
