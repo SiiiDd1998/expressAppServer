@@ -8,7 +8,6 @@ const bodyParser = require('body-parser');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const newsRouter = require('./routes/news.js')
-const testLocal = require('./routes/testLocal')
 
 const app = express();
 
@@ -22,6 +21,5 @@ app.use(cors());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/news', newsRouter)
-app.use('/testlocal', testLocal)
 
 module.exports = app;
