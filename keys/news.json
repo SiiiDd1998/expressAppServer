@@ -1,0 +1,303 @@
+{
+  "news": [
+    {
+      "_type": "NewsArticle",
+      "name": "RBI reiterates usage of digital modes for banking transactions",
+      "url": "https://www.moneycontrol.com/news/business/rbi-reiterates-usage-of-digital-modes-for-banking-transactions-5293571.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.7DCE1C7589A74933F9B30EC4B49156D6&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "The use of digital payment modes has become more important as the ongoing nationwide lockdown, imposed to maintain social distancing to contain the spread of coronavirus, has restricted the movement of people.",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T13:02:00.0000000Z",
+      "category": "Business"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "Gold rises to Rs 47,260 per 10 gram, silver up Rs 1,320 per kg",
+      "url": "https://www.moneycontrol.com/news/business/commodities/gold-rises-to-rs-47260-per-10-gram-silver-up-rs-1320-per-kg-5293501.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.E6D28C4EDDB4D73CC31A46915B660FD9&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "Navneet Damani, Vice President, Motilal Oswal, expects domestic front prices could hover in the range of Rs 47,100-47,625 per 10 gm",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T12:56:00.0000000Z",
+      "category": "Business"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "Truecaller revamps app with new Home tab, Smart SMS feature: All you need to know",
+      "url": "https://www.moneycontrol.com/news/technology/truecaller-revamps-app-with-new-home-tab-smart-sms-feature-all-you-need-to-know-5293211.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.5007232E8DFCE7C98C3B1348849B76E0&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "The new update brings with it a new Home tab, wherein, users can find all messages and calls merged into a single list.",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T13:05:00.0000000Z",
+      "category": "ScienceAndTechnology"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "Apollo Tyres cuts FY21 capex further to Rs 1,100 crore, plans virtual product launches",
+      "url": "https://www.moneycontrol.com/news/technology/auto/apollo-tyres-cuts-fy21-capex-further-to-rs-1100-crore-plans-virtual-product-launches-5293471.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.0C71B77A7AC6013A0595B7D8AF860C7E&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "The Delhi-based tyre maker had announced FY21 capex target of Rs 1,700-1,800 crore in FY20. However, in the December quarter, the company cut it down to Rs 1,400 - 1,500 crore.",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T12:55:00.0000000Z",
+      "category": "Business"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "Jewar airport: Land acquisition for warehousing likely to take off first, say experts",
+      "url": "https://www.moneycontrol.com/news/real-estate-2/jewar-airport-land-acquisition-for-warehousing-to-get-priority-say-experts-5293361.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.23DDDFF30497871BA8DEE5FB96BCF78E&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "A day after the Swiss firm Zurich Airport International AG received security clearance from the Centre for developing Jewar airport in western Uttar Pradesh, real estate consultants say that in COVID-19 times,",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T12:44:00.0000000Z",
+      "category": "Business"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "Ajanta Pharma Q4 net profit up 45% to Rs 129 crore",
+      "url": "https://www.moneycontrol.com/news/business/earnings/ajanta-pharma-q4-net-profit-up-45-to-rs-129-crore-5293581.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.3748B9D788486ED461BBA9FFC0D97BD2&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "Consolidated revenue from operations of the stood at Rs 682 crore for the quarter under consideration as against Rs 515 crore for the corresponding period a year ago.",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T12:54:00.0000000Z"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "RIL's jumbo Rs 53,125 crore rights issue opens today: What should investors do?",
+      "url": "https://www.moneycontrol.com/news/business/markets/reliance-industries-ril-rights-issue-opens-today-what-should-investors-do-5289481.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.CCFB3671E60BF02ED0316D88979D8296&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "Billionaire Mukesh Ambani-owned Reliance Industries' mega rights issue opened on May 20 for subscription for existing shareholders. The company proposed to raise Rs 53,125 crore t",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T11:16:00.0000000Z",
+      "category": "Business"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "UltraTech Cement posts net profit of Rs 3,243 crore; announces dividend of Rs 13",
+      "url": "https://www.moneycontrol.com/news/business/markets/ultratech-cement-reports-net-profit-of-rs-3243-crore-announces-dividend-of-rs-13-5292081.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.8A487BE924A8676DA6B2894058A977A4&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "Consolidated net sales stood at Rs 10,579 crore against Rs 12,170 crore in the corresponding period of last year.",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T10:16:00.0000000Z",
+      "category": "Business"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "Closing Bell: Nifty ends above 9,050, Sensex gains 622 pts; pharma stocks rally",
+      "url": "https://www.moneycontrol.com/news/business/markets/market-live-updates-share-market-live-updates-stock-market-today-may-20-latest-news-bse-nse-sensex-nifty-bajaj-finance-ppap-automotive-equitas-holding-tata-power-5289931.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.F731EC781D70E749B6A5F354C788D064&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "All the sectoral indices ended higher, with Nifty Pharma rose over 4 percent followed by the auto, energy and bank. BSE Midcap and smallcap indices rose over 1 percent each.",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T10:08:00.0000000Z",
+      "category": "Business"
+    },
+    {
+      "_type": "NewsArticle",
+      "name": "Crude likely to remain choppy with positive bias: Kotak Securities",
+      "url": "https://www.moneycontrol.com/news/business/markets/crude-likely-to-remain-choppy-with-positive-bias-kotak-securities-5292251.html",
+      "image": {
+        "_type": "ImageObject",
+        "thumbnail": {
+          "_type": "ImageObject",
+          "contentUrl": "https://www.bing.com/th?id=ON.636F689F94033D77588D60811FA31EA3&pid=News",
+          "width": 700,
+          "height": 393
+        }
+      },
+      "description": "Crude oil’s rally has come to a halt as market players await fresh cues which could come from inventory report. We may see choppy trade however general bias may be on the upside amid expectations that inventory report may reflect improving situation in US.",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "moneycontrol.com",
+          "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+              "_type": "ImageObject",
+              "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+            }
+          }
+        }
+      ],
+      "datePublished": "2020-05-20T10:49:00.0000000Z",
+      "category": "Business"
+    }
+  ]
+}

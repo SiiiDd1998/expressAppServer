@@ -1,0 +1,39 @@
+Endpoints
+
+https://api.cognitive.microsoft.com/bing/v5.0/images
+
+https://api.cognitive.microsoft.com/bing/v5.0/news
+
+https://api.cognitive.microsoft.com/bing/v5.0/videos
+
+https://api.cognitive.microsoft.com/bing/v5.0
+
+Key 1: 96eb7c4c32bf4b5e9a8b8a1c64ee400f
+
+Key 2: e459c12c17184379b27c06655ce581ce
+
+------------------------------------------------------------------------
+
+https://api.cognitive.microsoft.com/bing/v7.0/suggestions
+
+https://api.cognitive.microsoft.com/bing/v7.0/entities
+
+https://api.cognitive.microsoft.com/bing/v7.0/images
+
+https://api.cognitive.microsoft.com/bing/v7.0/localbusinesses
+
+https://api.cognitive.microsoft.com/bing/v7.0/news
+
+https://api.cognitive.microsoft.com/bing/v7.0/spellcheck
+
+https://api.cognitive.microsoft.com/bing/v7.0/urlpreview
+
+https://api.cognitive.microsoft.com/bing/v7.0/videos
+
+https://api.cognitive.microsoft.com/bing/v7.0/images/visualsearch
+
+https://api.cognitive.microsoft.com/bing/v7.0
+
+Key 1: 8034b0c772da48dcbb924e0b72254e03
+
+Key 2: e70247684c574033ae8fb60a72521656
