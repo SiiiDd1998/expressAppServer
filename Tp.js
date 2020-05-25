@@ -11,11 +11,11 @@ tp = async () => {
         const correlation = "MATCH p=(n:Organisation {name: $name1})-[r:correlation]->() RETURN p"
         const params = { name1: "IFCI.NS"};
 
-        const result = await session.run(cypher, params);
+        const result = await session.run(correlation, params);
 
         const singleRecord = result.records[0]
         const node = singleRecord.get(0)
-        
+
         // console.log(singleRecord)
         console.log('finished find');
         return result.records;
