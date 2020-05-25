@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const newsRouter = require('./routes/news.js')
+const relationsRouter = require('./routes/relations')
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/news', newsRouter)
+app.use('/news', newsRouter);
+app.use('/relations', relationsRouter);
 
 module.exports = app;
