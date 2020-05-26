@@ -12,17 +12,25 @@ let client = new NewsSearchAPIClient(credentials);
 /* GET users listing. */
 router.get('/', (req, res, next) => {
 
-    client.newsOperations.search(searchTerm,{market: 'en-in'}).then((result) => {
-        axios.post('https://flask-app-investor-buddy.azurewebsites.net/extract-relation', result.value)
-        .then(function (response) {
-            console.log(response);
-        })
-        return res.json(result.value)
-    }).catch((err) => {
-        return res.send(400).send({
-            error: err
-        })
-    });
+    client.newsOperations.search(searchTerm,{market: 'en-in'})
+        .then((result) => {
+            axios.post('https://flask-app-investor-buddy.azurewebsites.net/extract-relation', {
+                news: result.value
+            })
+                .then( (response) => {
+                    console.log(response.data);
+                    return res.json(response.data)
+                })
+                .catch (err => {
+                    return res.status(400).send({
+                        error: "Idhar error hai bhoi"
+                    })
+                })
+        }).catch((err) => {
+            return res.status(400).send({
+                error: "Idhar error hai selmon"
+            })
+        });
 })
 
 module.exports = router;

@@ -61,11 +61,12 @@ function getNormalizedScore (params) {
 
 router.get('/', function(req, res, next) {
     // Choose any one params for test use
-    params = {
-        label: 'Organisation',
-        symbol: "IFCI.NS",
-        sentiment: 0.8
-    }
+    // params = {
+    //     label: 'Organisation',
+    //     symbol: "IFCI.NS",
+    //     sentiment: 0.8
+    // }
+
     params = {
         label: 'Commodity',
         symbol: "Steel",
@@ -89,11 +90,11 @@ router.get('/scores', function (req, res, next) {
         sentiment: 0.8
     }
 
-    params = {
-        label: 'Commodity',
-        symbol: "Steel",
-        sentiment: 0.8
-    }
+    // params = {
+    //     label: 'Commodity',
+    //     symbol: "Steel",
+    //     sentiment: 0.8
+    // }
 
     // compute main node score if it is an organisation
     graph.getNodeVolatility(params)

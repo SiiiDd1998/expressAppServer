@@ -1,0 +1,81 @@
+{
+  "relations": [
+    {
+      "name": "Democratic bills aim at cracking down on targeted political ads on Facebook and Google",
+      "sentiment": {
+        "A": 0.4334044703327715,
+        "B": 0.37683525657206796
+      },
+      "url": "https://www.cnbc.com/2020/05/26/democratic-bills-crack-down-on-political-ad-microtargeting-online.html"
+    },
+    {
+      "name": "N.Y. Gov. Cuomo rings opening bell to mark NYSE floor's partial reopening",
+      "sentiment": {},
+      "url": "https://www.cnbc.com/video/2020/05/26/ny-gov-cuomo-rings-opening-bell-to-mark-nyse-floors-partial-reopening.html"
+    },
+    {
+      "name": "Treasury yields rise on coronavirus vaccine hopes and economic reopening",
+      "sentiment": {
+        "A": 0.41907056002154575,
+        "B": 0.5364090975127639
+      },
+      "url": "https://www.cnbc.com/2020/05/26/treasury-yields-rise-as-coronavirus-vaccine-hopes-drive-risk-on-sentiment.html"
+    },
+    {
+      "name": "College-bound students to miss out on billions in financial aid due to pandemic",
+      "sentiment": {
+        "A": 0.13766375645114348,
+        "B": 0.07463234397509688
+      },
+      "url": "https://www.cnbc.com/2020/05/26/amid-pandemic-college-bound-students-to-miss-out-on-billions-in-aid.html"
+    },
+    {
+      "name": "China is moving in with national security law as Hong Kong legislature 'has failed to deliver,' official says",
+      "sentiment": {
+        "A": 0.21720185518001278,
+        "B": 0.9713534057185489
+      },
+      "url": "https://www.cnbc.com/2020/05/26/china-proposed-security-law-as-hong-kong-has-failed-to-deliver-official.html"
+    },
+    {
+      "name": "Aston Martin shares surge after Mercedes-Benz exec is named new CEO",
+      "sentiment": {
+        "A": 0.3078740475440156,
+        "B": 0.3652804144975602
+      },
+      "url": "https://www.cnbc.com/2020/05/26/aston-martin-shares-surge-on-mercedes-benz-exec-being-named-new-ceo.html"
+    },
+    {
+      "name": "The U.S. should not 'indulge in fantasies' that China will cave in to pressure, think tank says",
+      "sentiment": {
+        "A": 0.7047576685373271,
+        "B": 0.26643916721302574
+      },
+      "url": "https://www.cnbc.com/2020/05/26/us-china-tension-fantasy-to-believe-china-will-cave-under-pressure.html"
+    },
+    {
+      "name": "The booze boom: Here's what we drank at home during lockdown",
+      "sentiment": {
+        "A": 0.7545963853649099,
+        "B": 0.45981374254409
+      },
+      "url": "https://www.cnbc.com/2020/05/26/coronavirus-what-alcohol-people-have-been-drinking-during-lockdown.html"
+    },
+    {
+      "name": "He experienced a severe reaction to Moderna's Covid-19 vaccine candidate. He's still a believer",
+      "sentiment": {
+        "A": 0.2923408008683307,
+        "B": 0.33517405346667617
+      },
+      "url": "https://www.cnbc.com/2020/05/26/he-experienced-a-severe-reaction-to-modernas-covid-19-vaccine-candidate-hes-still-a-believer.html"
+    },
+    {
+      "name": "Consumer confidence rises unexpectedly in May as economy reopens",
+      "sentiment": {
+        "A": 0.17737545197240823,
+        "B": 0.7526295734638161
+      },
+      "url": "https://www.cnbc.com/2020/05/26/consumer-confidence-may-2020.html"
+    }
+  ]
+}
