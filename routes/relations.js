@@ -81,6 +81,8 @@ router.get('/', function(req, res, next) {
         .catch(err => console.log(err));
 });
 
+
+// The main thing to be used
 router.get('/scores', function (req, res, next) {
     // Choose any one params for test use
     params = {
@@ -94,6 +96,23 @@ router.get('/scores', function (req, res, next) {
         symbol: "Steel",
         sentiment: 0.8
     }
+
+    var { Companies } = {
+        Companies: [
+            {
+                label: 'Organisation',
+                symbol: "IFCI.NS",
+                sentiment: 0.8
+            },
+            {
+                label: 'Organisation',
+                symbol: "IFCI.NS",
+                sentiment: 0.8
+            },
+            //so on companies
+        ]
+
+    }    
 
     // compute main node score if it is an organisation
     graph.getNodeVolatility(params)
