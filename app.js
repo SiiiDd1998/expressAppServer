@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const newsRouter = require('./routes/news.js')
+const newsRouter = require('./routes/news')
 const relationsRouter = require('./routes/relations')
 
 const app = express();
