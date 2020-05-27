@@ -2,275 +2,300 @@
     "news": [
         {
             "_type": "NewsArticle",
-            "name": "SC seeks reply from Centre, media body in plea against Markaz event coverage",
-            "url": "https://www.livemint.com/news/india/sc-seeks-reply-from-centre-media-body-in-plea-against-markaz-event-coverage-11590577703764.html",
+            "name": "Sun Pharma Q4 profit falls 37% to Rs 399.8 crore on one-time loss; revenue ahead of estimates",
+            "url": "https://www.moneycontrol.com/news/business/earnings/sun-pharma-q4-profit-falls-37-to-rs-399-8-crore-revenue-ahead-of-estimates-5321301.html",
             "image": {
                 "_type": "ImageObject",
                 "thumbnail": {
                     "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.691B511BB20AAB7B6567025D08B64C7C&pid=News",
-                    "width": 600,
-                    "height": 338
-                }
-            },
-            "description": "NEW DELHI: The Supreme Court on Wednesday sought response from the Centre and Press Council of India in a plea seeking strict action against media channels for allegedly communalising the Nizamuddin Markaz event. The apex court three-judge bench, headed by ...",
-            "provider": [
-                {
-                    "_type": "Organization",
-                    "name": "Mint"
-                }
-            ],
-            "datePublished": "2020-05-27T12:01:00.0000000Z"
-        },
-        {
-            "_type": "NewsArticle",
-            "name": "Reliance Industries mulls overseas IPO for Jio Platforms",
-            "url": "https://www.thenewsminute.com/article/reliance-industries-mulls-overseas-ipo-jio-platforms-125370",
-            "image": {
-                "_type": "ImageObject",
-                "thumbnail": {
-                    "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.7F69390D7D4A52B09048CF477AA2B399&pid=News",
+                    "contentUrl": "https://www.bing.com/th?id=ON.71884A725C465AEEF5AEF012D773CC5A&pid=News",
                     "width": 700,
-                    "height": 466
+                    "height": 393
                 }
             },
-            "description": "After Jio Platforms raised over Rs 78,000 crore from five different global investors including Facebook, Mukesh Ambani-backed Reliance Industries is reportedly now looking to list Jio Platforms outside India.",
+            "description": "Sun Pharma has reported a 41.3 percent growth in profit at Rs 3,764.93 crore and 13 percent increase in revenue at Rs 32,837.5 crore compared to previous year.",
             "provider": [
                 {
                     "_type": "Organization",
-                    "name": "The News Minute"
-                }
-            ],
-            "datePublished": "2020-05-27T08:27:00.0000000Z"
-        },
-        {
-            "_type": "NewsArticle",
-            "name": "SC directs Centre to identify hospitals for free treatment of covid-19 patients",
-            "url": "https://www.livemint.com/news/india/sc-directs-centre-to-identify-hospitals-for-free-treatment-of-covid-19-patients-11590579798034.html",
-            "image": {
-                "_type": "ImageObject",
-                "thumbnail": {
-                    "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.6E803E22A1C2ECB4A658FD9CD5E76806&pid=News",
-                    "width": 600,
-                    "height": 337
-                }
-            },
-            "description": "As per the petitioner, private hospitals are commercially exploiting the patients .The government has argued that capping the treatment cost or providing free treatment is a policy issue",
-            "provider": [
-                {
-                    "_type": "Organization",
-                    "name": "Mint",
+                    "name": "moneycontrol.com",
                     "image": {
                         "_type": "ImageObject",
                         "thumbnail": {
                             "_type": "ImageObject",
-                            "contentUrl": "https://www.bing.com/th?id=AR_e3f5b5599888e2963fb8345a1990017f&pid=news"
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
                         }
                     }
                 }
             ],
-            "datePublished": "2020-05-27T11:49:00.0000000Z"
-        },
-        {
-            "_type": "NewsArticle",
-            "name": "SpiceJet clarifies on media news; stock trades lower by 1%",
-            "url": "https://www.indiainfoline.com/article/news-sector-aviation/spicejet-clarifies-on-media-news-stock-trades-lower-by-1-120052000311_1.html",
-            "image": {
-                "_type": "ImageObject",
-                "thumbnail": {
-                    "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.75D5B1352CC64BF944FB145710C403ED&pid=News",
-                    "width": 350,
-                    "height": 233
-                }
-            },
-            "description": "The exchanges sought clarification from SpiceJet regards to a news titled \"With no bailout from the government, only hope for SpiceJet is a buyout”.",
-            "provider": [
-                {
-                    "_type": "Organization",
-                    "name": "India Infoline",
-                    "image": {
-                        "_type": "ImageObject",
-                        "thumbnail": {
-                            "_type": "ImageObject",
-                            "contentUrl": "https://www.bing.com/th?id=AR_82ac1278369565f18ff5831030c74740&pid=news"
-                        }
-                    }
-                }
-            ],
-            "datePublished": "2020-05-20T06:20:00.0000000Z",
+            "datePublished": "2020-05-27T12:24:00.0000000Z",
             "category": "Business"
         },
         {
             "_type": "NewsArticle",
-            "name": "6 things to know about India’s richest banker, Uday Kotak",
-            "url": "https://www.gqindia.com/get-smart/content/uday-kotak-6-things-to-know-about-india-richest-banker",
+            "name": "Amazon India partners with Acko General to offer free COVID-19 insurance cover to sellers",
+            "url": "https://www.moneycontrol.com/news/india/coronavirus-pandemic-amazon-india-provides-free-covid-19-health-insurance-for-its-sellers-5322301.html",
             "image": {
                 "_type": "ImageObject",
                 "thumbnail": {
                     "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.CD21D03ACFE4451CDA422DADE155F8FB&pid=News",
+                    "contentUrl": "https://www.bing.com/th?id=ON.608D5EC38B22D37B147A0A224226019B&pid=News",
                     "width": 700,
                     "height": 393
                 }
             },
-            "description": "Uday Kotak, India’s richest banker, thanks to his staggering Rs 76 thousand crore net worth, is also the CEO and MD of Kotak Mahindra bank. Kotak is also termed as the “nationalist” banker by LiveMint and a couple other dailies,",
+            "description": "The insurance will help cover the expenses related to COVID-19 hospitalisation and treatment as well as ambulance assistance and ICU charges of up to INR 50,000, and it will be valid for one year after activation,",
             "provider": [
                 {
                     "_type": "Organization",
-                    "name": "GQ",
+                    "name": "moneycontrol.com",
                     "image": {
                         "_type": "ImageObject",
                         "thumbnail": {
                             "_type": "ImageObject",
-                            "contentUrl": "https://www.bing.com/th?id=AR_d85da6a7422c4894d79837503ef708a0&pid=news"
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
                         }
                     }
                 }
             ],
-            "datePublished": "2020-05-25T06:38:00.0000000Z"
+            "datePublished": "2020-05-27T12:28:00.0000000Z"
         },
         {
             "_type": "NewsArticle",
-            "name": "OYO to offload loss-making properties globally as hospitality sector sees massive hit",
-            "url": "https://www.thenewsminute.com/article/oyo-offload-more-loss-making-hotels-amid-covid-19-pandemic-livemint-report-123680?page=1",
+            "name": "G R Chintala takes over as NABARD chairman",
+            "url": "https://www.moneycontrol.com/news/india/g-r-chintala-takes-over-as-nabard-chairman-5321611.html",
             "image": {
                 "_type": "ImageObject",
                 "thumbnail": {
                     "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.7A42913E2E499F282896F5EC3513D028&pid=News",
-                    "width": 700,
-                    "height": 466
-                }
-            },
-            "description": "The fallout of the coronavirus pandemic has started showing up from here and there already. One of the worst affected due to the complete lockdown and travel restrictions has been the hospitality industry.",
-            "provider": [
-                {
-                    "_type": "Organization",
-                    "name": "The News Minute"
-                }
-            ],
-            "datePublished": "2020-05-22T13:58:00.0000000Z"
-        },
-        {
-            "_type": "NewsArticle",
-            "name": "You can buy brand new vehicles in second hand market, Know details",
-            "url": "https://english.newstracklive.com/news/bs4-vehicles-discount-bs4-vehicle-offers-two-wheeler-sc98-nu870-ta294-1092345-1.html",
-            "image": {
-                "_type": "ImageObject",
-                "thumbnail": {
-                    "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.03F4157D4004E2060FE307E565B506CC&pid=News",
-                    "width": 682,
-                    "height": 450
-                }
-            },
-            "description": "Between the lockdown and the Corona crisis, many automobile dealerships in India are currently struggling with the inventory of unsold BS4 vehicles. Some of these dealerships have ... | News Track",
-            "provider": [
-                {
-                    "_type": "Organization",
-                    "name": "News Track",
-                    "image": {
-                        "_type": "ImageObject",
-                        "thumbnail": {
-                            "_type": "ImageObject",
-                            "contentUrl": "https://www.bing.com/th?id=AR_1b00bd5b04bb819a7650867332c0ba3f&pid=news"
-                        }
-                    }
-                }
-            ],
-            "datePublished": "2020-05-15T00:13:00.0000000Z"
-        },
-        {
-            "_type": "NewsArticle",
-            "name": "HT Media posts record 1.5m listens on HT Smartcast in May",
-            "url": "https://www.exchange4media.com/media-others-news/ht-media-posts-record-15m-listens-on-ht-smartcast-in-may-104817.html",
-            "image": {
-                "_type": "ImageObject",
-                "thumbnail": {
-                    "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.2B0734B5BE4BB25333D173A5389A0A9D&pid=News",
+                    "contentUrl": "https://www.bing.com/th?id=ON.5894FDCBCB5C35D51DBC81D302ACC338&pid=News",
                     "width": 700,
                     "height": 393
                 }
             },
-            "description": "The podcasts offer audio content in bite-size chunks, allowing listeners to dive into topics without having to set aside time to read or watch a video",
+            "description": "G R Chintala has taken charge as the chairman of National Bank for Agriculture and Rural Development (NABARD), the apex agri-finance institution said on Wednesday. Chintala replaces H K Bhanwala, who headed the organisation for more than six years.",
             "provider": [
                 {
                     "_type": "Organization",
-                    "name": "Exchange 4 Media",
+                    "name": "moneycontrol.com",
                     "image": {
                         "_type": "ImageObject",
                         "thumbnail": {
                             "_type": "ImageObject",
-                            "contentUrl": "https://www.bing.com/th?id=AR_ac73301c21bbee4a56cc46518157300e&pid=news"
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
                         }
                     }
                 }
             ],
-            "datePublished": "2020-05-23T00:31:00.0000000Z",
+            "datePublished": "2020-05-27T12:00:00.0000000Z",
+            "category": "Business"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "Coronavirus lockdown: JSW Sports, owners of IPL and PKL teams, see 30% impact on business in 2020",
+            "url": "https://www.moneycontrol.com/news/trends/sports-trends/coronavirus-lockdown-jsw-sports-owners-of-ipl-and-pkl-teams-see-30-impact-on-business-in-2020-5322451.html",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ON.F376E3FCCAEC3C83B43F12C92DABD520&pid=News",
+                    "width": 700,
+                    "height": 393
+                }
+            },
+            "description": "The impact of not having IPL this year will be big as the league is a massive P&L (profit and loss statement) for the company, said the JSW Sports CEO",
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "moneycontrol.com",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2020-05-27T12:24:00.0000000Z",
+            "category": "Sports"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "Big Story | Aarogya Setu open source: What prompted government's move, other questions answered",
+            "url": "https://www.moneycontrol.com/news/eye-on-india/videos/big-story-aarogya-setu-open-source-why-government-made-the-move-other-questions-answered-5322431.html",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ON.B918884930C9D8A50DFDDC49AE8B4C2B&pid=News",
+                    "width": 700,
+                    "height": 393
+                }
+            },
+            "description": "In this edition of Big Story, Moneycontrol's Sakshi Batra shares more details and explains what open-sourcing means for Aarogya Setu.",
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "moneycontrol.com",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2020-05-27T12:21:00.0000000Z",
             "category": "ScienceAndTechnology"
         },
         {
             "_type": "NewsArticle",
-            "name": "Credit Scores Have Fallen Due To Change In CIBIL's Method",
-            "url": "https://www.goodreturns.in/news/credit-scores-have-fallen-due-to-change-in-cibil-s-method-1161360.html",
+            "name": "In Pics | India's FY21 GDP growth forecasts: A look at predictions by leading agencies",
+            "url": "https://www.moneycontrol.com/news/business/economy/in-pics-indias-fy21-gdp-growth-forecasts-a-look-at-predictions-by-leading-agencies-5322071.html",
             "image": {
                 "_type": "ImageObject",
                 "thumbnail": {
                     "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.D47C44BC4EA37DC913A6075EF9D163CF&pid=News",
-                    "width": 600,
-                    "height": 450
+                    "contentUrl": "https://www.bing.com/th?id=ON.5A886F17E81874D38ECD435B03503AE0&pid=News",
+                    "width": 700,
+                    "height": 393
                 }
             },
-            "description": "A credit score is one of the factors that determine whether a lending institution will give you a loan or not. In India, TransUnion CIBIL (formerly known as CIBIL) is the most popular credit information companies in India and maintains credit files on millions of individuals and businesses in the country.",
+            "description": "The agencies believe the Indian economy will find it hard to overcome the after-effects of coronavirus-induced lockdown restrictions and the stimulus package measured by the government may not be enough.",
             "provider": [
                 {
                     "_type": "Organization",
-                    "name": "Goodreturns",
+                    "name": "moneycontrol.com",
                     "image": {
                         "_type": "ImageObject",
                         "thumbnail": {
                             "_type": "ImageObject",
-                            "contentUrl": "https://www.bing.com/th?id=AR_d7be503427003c8b81286b47486a435b&pid=news"
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
                         }
                     }
                 }
             ],
-            "datePublished": "2020-05-23T06:29:00.0000000Z",
+            "datePublished": "2020-05-27T12:22:00.0000000Z"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "Tata Investment Corporation posts net loss of Rs 36.75 crore in Q4 FY20",
+            "url": "https://www.moneycontrol.com/news/business/earnings/tata-investment-corporation-posts-net-loss-of-rs-36-75-crore-in-q4-fy20-5322551.html",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ON.C301D22D66FC6BA401E1D8DB6494453B&pid=News",
+                    "width": 462,
+                    "height": 435
+                }
+            },
+            "description": "Total revenue from operations in the quarter under review stood at Rs 21.41 crore as compared to Rs 24.59 crore in the corresponding period a year ago.",
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "moneycontrol.com",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2020-05-27T12:24:00.0000000Z",
             "category": "Business"
         },
         {
             "_type": "NewsArticle",
-            "name": "A case of complicity",
-            "url": "https://www.telegraphindia.com/opinion/coronavirus-lockdown-migrant-crisis-a-case-of-complicity-by-media/cid/1775517",
+            "name": "Coronavirus pandemic | 30,000 weddings cancelled in Gujarat amid COVID-19",
+            "url": "https://www.moneycontrol.com/news/india/coronavirus-pandemic-30000-weddings-cancelled-in-gujarat-amid-covid-19-5322571.html",
             "image": {
                 "_type": "ImageObject",
                 "thumbnail": {
                     "_type": "ImageObject",
-                    "contentUrl": "https://www.bing.com/th?id=ON.2EF4110924AB8ADDC1FFD4C1BE4055B6&pid=News",
+                    "contentUrl": "https://www.bing.com/th?id=ON.358CE61A62C85DECB2902376E11A7DC5&pid=News",
                     "width": 700,
-                    "height": 350
+                    "height": 393
                 }
             },
-            "description": "How did unorganized labour become invisible?",
+            "description": "March and April are considered the peak season, when maximum number of weddings take place in the state, Hotel and Restaurant Association (Gujarat) spokesperson Abhijit Deshmukh said.",
             "provider": [
                 {
                     "_type": "Organization",
-                    "name": "The Telegraph",
+                    "name": "moneycontrol.com",
                     "image": {
                         "_type": "ImageObject",
                         "thumbnail": {
                             "_type": "ImageObject",
-                            "contentUrl": "https://www.bing.com/th?id=AR_c10f2ea79f44336e42636778d6493c3d&pid=news"
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
                         }
                     }
                 }
             ],
-            "datePublished": "2020-05-24T19:36:00.0000000Z",
+            "datePublished": "2020-05-27T12:14:00.0000000Z",
+            "category": "LifeStyle"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "Donald Trump threatens to regulate or shut down social media companies",
+            "url": "https://www.moneycontrol.com/news/world/donald-trump-threatens-to-regulate-or-shut-down-social-media-companies-5322561.html",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ON.E32799121C2997E7561556A12C840448&pid=News",
+                    "width": 700,
+                    "height": 393
+                }
+            },
+            "description": "Trump, without offering any evidence, reiterated his accusations of political bias by such technology platforms in a pair of early morning posts on Twitter, saying: \"Republicans feel that Social Media Platforms totally silence conservatives voices.",
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "moneycontrol.com",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2020-05-27T12:12:00.0000000Z",
+            "category": "Politics"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "SFIO to probe Jaiprakash Associates, Jaypee Infratech for financial irregularities",
+            "url": "https://www.moneycontrol.com/news/business/real-estate/sfio-to-probe-jaiprakash-associates-jaypee-infratech-for-financial-irregularities-5322411.html",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ON.EFA6DCCF8B1D24D509DF14715C200549&pid=News",
+                    "width": 700,
+                    "height": 393
+                }
+            },
+            "description": "Jaypee group, which is into construction, cement, power, real estate, hotel and hospital businesses, has been facing crisis in the last few years due to defaults in debt repayments and huge delays in completion of housing projects in Noida and Greater Noida.",
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "moneycontrol.com",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=AR_bc3535dea5b7e3e3a324b04a00a19e3c&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2020-05-27T11:50:00.0000000Z",
             "category": "Business"
         }
     ]

@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const CognitiveSearchCredentials = require('ms-rest-azure').CognitiveServicesCredentials
 const credentials = new CognitiveSearchCredentials('dba8ba5143ea4a40bf75e82fc854fc6f') //8034b0c772da48dcbb924e0b72254e03
-const searchTerm = 'cnbc.com news'
+const searchTerm = 'moneycontrol.com news'
 
 const NewsSearchAPIClient = require('azure-cognitiveservices-newssearch');
 let client = new NewsSearchAPIClient(credentials); //https://news-extractor-api.cognitiveservices.azure.com/bing/v7.0
