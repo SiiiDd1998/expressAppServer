@@ -28,7 +28,7 @@ function addToList(relations, sentiment) {
     }
 }
 
-function normalizeScore() {
+function getNormalizedScore() {
     //compute average of all list elements for a company
 
     for (organisation in companyScores) {
@@ -38,7 +38,7 @@ function normalizeScore() {
     }
 }
 
-function getNormalizedScore (params) {
+function normalizeScore (params) {
     // function to compute normalized score of all organisations
 
     return new Promise ((resolve, reject) => {
@@ -47,16 +47,11 @@ function getNormalizedScore (params) {
             
             //add all relations to companyScores
             addToList(relations, params.sentiment);
-
-            //Get normalized score of all relations
-            normalizeScore();
-    
-            resolve(companyScores);
+            console.log('length after: ', Object.keys(companyScores).length)
+            resolve('done');
         })
-        .catch(err => console.log(err));
-        
+        .catch(err => console.log(err));  
     }); 
-
 }
 
 router.get('/', function(req, res, next) {
@@ -84,60 +79,73 @@ router.get('/', function(req, res, next) {
 
 
 // The main thing to be used
-router.get('/scores', function (req, res, next) {
-    // Choose any one params for test use
+router.post('/scores', function (req, res, next) {
+    /*
+    var { Params } = {
+        Params: [
+            {
+                label: 'Organisation',
+                symbol: "IFCI.NS",
+                sentiment: 0.8
+            },
+            {
+                label: 'Commodity',
+                symbol: "Steel",
+                sentiment: 0.9
+            },
+            //so on companies
+        ]
+    }
+    */ 
+    var Params = req.body.Params
+    console.log("Params are\n", Params);
+    
+    var getVolatilityPromises = []
+    var normalizeScorePromises = []
+    var sentiments = {}
+    // compute main node score if it is an organisation
+    for (param of Params) {
+        sentiments[param.symbol] = param.sentiment;
+
+        normalizeScorePromises.push(normalizeScore(param));
+        getVolatilityPromises.push(graph.getNodeVolatility(param));
+    }
+    console.log('array has\n', normalizeScorePromises);
+
+    Promise.all(getVolatilityPromises)
+     .then(results => {
+        for(result of results) {
+            //  console.log("result fields\n", result._fields);
+             
+            if(result._fields) {
+                parentName = result._fields[0].end.properties.name
+                sentiment = sentiments[parentName]
+                volatility = parseFloat(result._fields[0].segments[0].relationship.properties.value);
+                companyScores[parentName] = parseFloat(sentiment)*volatility;
+                console.log(parentName, companyScores[parentName]);
+                
+            }
+        }
+        return Promise.all(normalizeScorePromises)
+     }).then(values => {
+        getNormalizedScore();
+        res.json(companyScores)
+     })
+     .catch(error => console.log(error));
+
+});
+
+router.get('/parent', function(req, res) {
     params = {
         label: 'Organisation',
         symbol: "IFCI.NS",
         sentiment: 0.8
     }
-
-    // params = {
-    //     label: 'Commodity',
-    //     symbol: "Steel",
-    //     sentiment: 0.8
-    // }
-
-    var { Companies } = {
-        Companies: [
-            {
-                label: 'Organisation',
-                symbol: "IFCI.NS",
-                sentiment: 0.8
-            },
-            {
-                label: 'Organisation',
-                symbol: "IFCI.NS",
-                sentiment: 0.8
-            },
-            //so on companies
-        ]
-
-    }    
-
-    // compute main node score if it is an organisation
     graph.getNodeVolatility(params)
-        .then(result => {
-            if(result._fields) {
-                volatility = parseFloat(relation._fields[0].segments[0].relationship.properties.value);
-                companyScores[params.symbol] = parseFloat(params.sentiment)*volatility;
-            }
-            // compute normalized score
-            getNormalizedScore(params)
-            .then(result => {
-                // console.log(result['CUB.NS'])
-                res.json(result)
-            });
-        });
-});
-
-router.get('/parent', function(req, res) {
-
-        graph.getRelations('IFCI.NS')
-        .then(parent => {
-            console.log(parent[0]);
-            res.json(parent)
-        }); 
+    .then(parent => {
+        console.log(parent[0]);
+        res.json(parent)
+    }); 
 })
 
 module.exports = router;

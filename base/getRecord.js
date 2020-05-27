@@ -6,7 +6,10 @@ relations = {
     Organisation: 'correlation',
     Commodity: 'volatility'
 }
+
 graph = {}
+
+
 graph.getNodeVolatility = async({symbol, label}) => {
 
     if(label == 'Commodity') return {}
@@ -14,14 +17,13 @@ graph.getNodeVolatility = async({symbol, label}) => {
 
     try {
         console.log('start');
-        const relationQuery = `MATCH p=(n:Commodity)-[r:volatility]->(m:Organisation {name: "IFCI.NS"}) RETURN p LIMIT 10`
+        const relationQuery = `MATCH p=(n:Commodity)-[r:volatility]->(m:Organisation {name: $symbol}) RETURN p LIMIT 10`
         const params = { symbol };
-        console.log(relationQuery);
-        
+        // console.log(relationQuery);
         const result = await session.run(relationQuery, params);
 
         console.log('finished find');
-        return result.records;
+        return result.records[0];
 
     } catch (e) {
         console.log(e)
@@ -37,20 +39,16 @@ graph.getRelations = async ({ label, symbol }) => {
         console.log('start');
         const relationQuery = `MATCH p=(n:${label} {name: $symbol})-[: ${relations[label]}]->() RETURN p`
         const params = { symbol };
-        // console.log(relationQuery);
-        
         const result = await session.run(relationQuery, params);
 
         console.log('finished find');
         return result.records;
-
 
     } catch (e) {
         console.log(e)
     } finally {
         await session.close()
     }
-
 }
 
 module.exports = graph;
