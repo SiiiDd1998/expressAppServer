@@ -1,5 +1,13 @@
 var express = require('express');
 var router = express.Router();
+const User = require('../models/User')
+const passwordHasher = require('password-hasher')
+
+function passwordHash(password) {
+  const hash = passwordHasher.createHash('ssha512',password,new Buffer('83d88386463f0625', 'hex'))
+  const rfcHash = passwordHasher.formatRFC2307(hash)
+  return rfcHash;
+}
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
