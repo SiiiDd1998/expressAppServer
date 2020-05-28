@@ -8,15 +8,15 @@ router.get('/', function(req, res, next) {
 
 router.post('/register', async (req, res, next) => {
   try {
-    const {password,username} = req.body
+    const {password,email} = req.body
 
     const user1 = await User.findOne({
-      username: username
+      email: email
     })
 
     if(user1) {
       return res.status(203).send({
-        error: "UserName Already Exists"
+        error: "email Already Exists"
       })
     }
 
@@ -24,16 +24,10 @@ router.post('/register', async (req, res, next) => {
 
     const user = await User.create(req.body)
 
-    const token = jwt.sign(
-        {user: user},
-        config.privateKey,
-        {expiresIn: 3600}
-    )
-
     res.send({
-      username: user.username,
-      token: token
+      email: user.email
     })
+
   } catch (err) {
     res.status(201).send({
       err: err
@@ -43,10 +37,10 @@ router.post('/register', async (req, res, next) => {
 
 router.post('/login', async (req, res, next) => {
   try {
-    const {username,password} = req.body
+    const {email,password} = req.body
 
     const user = await User.findOne({
-      username: username
+      email: email
     })
 
     if(!user) {
@@ -63,15 +57,8 @@ router.post('/login', async (req, res, next) => {
       })
     }
 
-    const token = jwt.sign(
-        {user: user},
-        config.privateKey,
-        {expiresIn: 60*60}
-    )
-
     res.send({
-      username: user.username,
-      token: token
+      email: user.email
     })
   } catch (err) {
     res.status(201).send({
