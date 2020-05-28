@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const dbconnect = require('./dbconnect')
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -23,5 +24,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/news', newsRouter);
 app.use('/relations', relationsRouter);
+
+dbconnect()
 
 module.exports = app;
