@@ -1,6 +1,6 @@
 const express = require('express')
 const graph = require('../base/getRecord')
-const extractrelations = require('../base/extractRelations')
+const RelationExtractor = require('../base/extractRelations')
 
 const router = express.Router()
 
@@ -29,10 +29,20 @@ router.get('/', function(req, res, next) {
 
 //main test route
 router.post('/scores', function(req, res) {
-    // console.log("baap chiz hai maal");
+
+    var Params = RelationExtractor.convertToParams(req.body);
+
+/*     var Params = [
+        { label: 'Organisation', sentiment: -0.025, symbol: 'LALPATHLAB.NS' },
+        {
+          label: 'Organisation',
+          sentiment: -0.015625,
+          symbol: 'ASHOKLEY.NS'
+        }
+      ]; */
+    // console.log(Params);
     
-    var { Params } = req.body;
-    extractrelations({ Params })
+    RelationExtractor.extractRelations({ Params })
      .then(result => {
         res.json(result);
      });
