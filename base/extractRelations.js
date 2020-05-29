@@ -81,7 +81,7 @@ function extractRelations({ Params }) {
                 sentiment = sentiments[parentName]
                 volatility = parseFloat(result._fields[0].segments[0].relationship.properties.value);
                 companyScores[parentName] = parseFloat(sentiment)*volatility;
-                console.log(parentName, companyScores[parentName]);
+                // console.log(parentName, companyScores[parentName]);
                 
             }
         }

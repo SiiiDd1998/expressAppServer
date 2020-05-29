@@ -1,7 +1,8 @@
 const express = require('express')
-const router = express.Router()
 const graph = require('../base/getRecord')
 const extractrelations = require('../base/extractRelations')
+
+const router = express.Router()
 
 router.get('/', function(req, res, next) {
     // Choose any one params for test use
@@ -30,7 +31,7 @@ router.get('/', function(req, res, next) {
 router.post('/scores', function(req, res) {
     // console.log("baap chiz hai maal");
     
-    var Params = req.body.Params;
+    var { Params } = req.body;
     extractrelations({ Params })
      .then(result => {
         res.json(result);
