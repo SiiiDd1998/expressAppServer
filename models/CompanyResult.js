@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
 
-const company = new mongoose.Schema({
-    ticker: {
+const Company = new mongoose.Schema({
+    symbol: {
         type: String,
         required: true,
         unique: true
     },
-    name: {
+    company: {
         type: String,
         required: true
     },
@@ -23,6 +23,6 @@ const company = new mongoose.Schema({
     }
 });
 
-const CompanyResults = mongoose.model('CompanyResults', company);
+const CompanyResults = mongoose.model('CompanyResults', Company);
 
 module.exports = CompanyResults;

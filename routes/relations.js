@@ -2,6 +2,7 @@ const express = require('express')
 const graph = require('../base/getRecord')
 const RelationExtractor = require('../base/extractRelations')
 
+
 const router = express.Router()
 
 router.get('/', function(req, res, next) {
@@ -59,6 +60,7 @@ router.get('/parent', function(req, res) {
         console.log(parent[0]);
         res.json(parent)
     }); 
-})
+});
+
 
 module.exports = router;
