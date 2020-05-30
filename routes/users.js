@@ -3,6 +3,8 @@ var router = express.Router();
 const User = require('../models/Users')
 const CompanyResultDB = require('../models/CompanyResult')
 const passwordHasher = require('password-hasher')
+const neo4j = require('neo4j-driver');
+const driver = new neo4j.driver("bolt://52.252.99.100:7687", neo4j.auth.basic("neo4j", "NuV9sXUJzjve"));
 
 function passwordHash(password) {
   const hash = passwordHasher.createHash('ssha512',password,new Buffer('83d88386463f0625', 'hex'))
@@ -32,6 +34,24 @@ router.post('/register', async (req, res, next) => {
     req.body.password = passwordHash(password);
 
     const user = await User.create(req.body)
+
+    const session = driver.session();
+
+    try {
+      const cypher = "CREATE (p:User {name: $name }) RETURN p";
+      const params = { name: email };
+
+      const result = await session.run(cypher, params);
+
+      const singleRecord = result.records[0]
+      const node = singleRecord.get(0)
+
+      console.log(node.properties.name)
+    } catch (e) {
+      console.log(e)
+    } finally {
+      await session.close()
+    }
 
     res.send({
       email: user.email
@@ -78,10 +98,30 @@ router.post('/login', async (req, res, next) => {
 
 router.post('/getUpdates', async (req, res) => {
   try{
-    const user = 'abcd' //take from req object
-    const companies = ['RML.NS', 'SIS.NS', 'IFCI.NS'] //take from graph
+    const {user} = req.body //take from req object
+
+    //Graph query
+    const session = driver.session();
+
+    let companies = []
+
+    try {
+      const cypher = "MATCH p=(n:User {name: $name})-[r:subscribe]->(m:Organisation) RETURN p";
+      const params = { name: user };
+
+      const result = await session.run(cypher, params);
+
+      for (let i=0;i<result.records.length;i++) {
+        companies.push(result.records[i]._fields[0].end.properties.name)
+      }
+      console.log(companies)
+    } catch (e) {
+      console.log(e)
+    } finally {
+      await session.close()
+    }
+
     var returnTable = [] //value to be returned
-    console.log('started');
     
     for(symbol of companies) {
       console.log('finding for ', symbol);
