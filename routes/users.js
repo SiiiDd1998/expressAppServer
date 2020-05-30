@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const User = require('../models/Users')
+const CompanyResultDB = require('../models/CompanyResult')
 const passwordHasher = require('password-hasher')
 
 function passwordHash(password) {
@@ -74,5 +75,25 @@ router.post('/login', async (req, res, next) => {
     })
   }
 })
+
+router.post('/getUpdates', async (req, res) => {
+  try{
+    const user = 'abcd' //take from req object
+    const companies = ['RML.NS', 'SIS.NS', 'IFCI.NS'] //take from graph
+    var returnTable = [] //value to be returned
+    console.log('started');
+    
+    for(symbol of companies) {
+      console.log('finding for ', symbol);
+      
+      const result = await CompanyResultDB.findOne({ symbol });
+      returnTable.push(result)
+    }
+    res.json({ table: returnTable });
+
+  } catch(err) {
+    console.log(err);
+  }
+});
 
 module.exports = router;
