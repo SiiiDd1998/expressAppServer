@@ -11,22 +11,26 @@ async function populate() {
         // console.log(row);
         entries.push(row)
         
+    })
+    .on('end', async () => {
+        console.log(entries);
+        
+        for(row of entries) {
+            try{
+                const result = await CompanyResult.create({
+                    symbol: row.Symbol + '.NS',
+                    company: row.Company,
+                    sentiment: 0.0
+                });
+                console.log('result is ', result);
+    
+            } catch(err) {  
+                console.log('error is thrown');
+                
+                console.error();
+            }
+        } 
     });
-    for(row of entries) {
-        try{
-            const result = await CompanyResult.create({
-                symbol: row.Symbol + '.NS',
-                company: row.Company,
-                sentiment: 0.0
-            });
-            console.log('result is ', result);
-
-        } catch(err) {  
-            console.log('error is thrown');
-            
-            console.error();
-        }
-    }
 }
 dbconnect();
 console.log('connected');

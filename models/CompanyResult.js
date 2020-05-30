@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const Double = require('@mongoosejs/double')
 
 const Company = new mongoose.Schema({
     symbol: {
@@ -11,7 +12,7 @@ const Company = new mongoose.Schema({
         required: true
     },
     sentiment: {
-        type: Number,
+        type: Double,
         required: true
     },
     date: {
