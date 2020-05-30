@@ -21,7 +21,6 @@ function addToList(relations, sentiment, news) {
         }
         else {
             newsRelations[organisation] = news;
-            // console.log('news is ', newsRelations[organisation]);
         }
 
         //calculated related organisation score using correlation/beta, and sentiment
@@ -29,8 +28,16 @@ function addToList(relations, sentiment, news) {
         score = sentiment*multiplier;
 
         //If sentiment is extract directly from news, no need to find correlations 
-        if(typeof companyScores[organisation] !== 'number')
-            companyScores[organisation] = organisation in companyScores ? companyScores[organisation].push(score) : [score];
+        if(organisation in companyScores && typeof companyScores[organisation] === 'number') {
+            // console.log(organisation, ' has score ', companyScores[organisation]);
+            return;
+        }
+        if(organisation in companyScores) {
+            companyScores[organisation].push(score);
+        }
+        else {
+            companyScores[organisation] = [score];
+        }
     }
 }
 
@@ -39,6 +46,8 @@ function getNormalizedScore() {
 
     for (organisation in companyScores) {
         //if value is array, compute average of the array. This gives normalized score for that company
+        // console.log(companyScores[organisation]);
+        
         if(companyScores[organisation].length)
             companyScores[organisation] = average(companyScores[organisation])
     }
@@ -76,7 +85,7 @@ function normalizeScore (params) {
 relations.extractRelations = function ({ Params }) {
 
     // console.log("Params are\n", Params);
-    
+    companyScores = {};
     var getVolatilityPromises = []
     var normalizeScorePromises = []
     var sentiments = {}
@@ -129,14 +138,13 @@ relations.convertToParams = function({ relations }) {
                     url: [article.url],
                     label: param.label,
                     sentiment: [param.sentiment]
-                }
-                
+                }               
             }
         }
     }
     
     for(symbol in initParams) {
-        initParams[symbol].sentiment = average(initParams[symbol].sentiment)
+        initParams[symbol].sentiment = average(initParams[symbol].sentiment)       
     }
     var Params = []
     for(symbol in initParams) {
@@ -150,26 +158,34 @@ relations.convertToParams = function({ relations }) {
     return Params;
 }
 
-/* compute = extractRelations({
+/*
+compute = relations.extractRelations({
     Params: [
-        {
+         {
             label: 'Organisation',
             symbol: "IFCI.NS",
-            sentiment: 0.8
-        },
+            sentiment: 0.02,
+            news: []
+        }, 
         {
             label: 'Commodity',
             symbol: "Steel",
-            sentiment: 0.9
+            sentiment: 0.03,
+            news: []
         },
         //so on companies
     ]
-}); */
+});
 
-/* console.log('compute\n', compute);
-compute.then(val => {
-    console.log('val\n', val);
+//  console.log('compute\n', compute);
+compute.then( ({finalScores}) => {
+    // console.log('val\n', val);
+    for (values of finalScores) {
+        console.log(values.symbol,  values.sentiment);
+        
+    }
     
-}) */
+}) 
+*/
 
 module.exports = relations;

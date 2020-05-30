@@ -18,13 +18,13 @@ router.get('/', (req, res, next) => {
         .then((result) => {
             // console.log(result);
             // res.json({news: result.value});
-            axios.post('https://flask-app-investor-buddy.azurewebsites.net/extract-relations', {
+            axios.post('https://flask-app-investor-buddy.azurewebsites.net/extract-relation', {
                 news: result.value
             })
                 .then((response) => {
                     // console.log(response.data);
                     var Params = RelationExtractor.convertToParams(response.data);
-                    console.log(Params);
+                    // console.log(Params);
                     
                     return RelationExtractor.extractRelations({ Params })
                     
