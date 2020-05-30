@@ -30,8 +30,19 @@ router.get('/', (req, res, next) => {
                     
                     // return res.json(response.data)
                 })
-                .then(result => {
-                    res.json(result);
+                .then( async ({ finalScores }) => {
+                    for (entry of finalScores) {
+                        var res = await CompanyResultDB.updateOne({
+                            symbol: entry.symbol
+                        },
+                        {
+                            $set: {
+                                sentiment: entry.sentiment,
+                                news: entry.news
+                            }
+                        });
+                    }
+                    res.json({ finalScores });
                 })
                 .catch(err => {
                     return res.status(400).send({

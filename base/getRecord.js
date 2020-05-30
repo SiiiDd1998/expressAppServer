@@ -16,13 +16,13 @@ graph.getNodeVolatility = async({symbol, label}) => {
     const session = driver.session();
 
     try {
-        console.log('start');
+        // console.log('start');
         const relationQuery = `MATCH p=(n:Commodity)-[r:volatility]->(m:Organisation {name: $symbol}) RETURN p LIMIT 10`
         const params = { symbol };
         // console.log(relationQuery);
         const result = await session.run(relationQuery, params);
 
-        console.log('finished find');
+        // console.log('finished find');
         return result.records[0];
 
     } catch (e) {
@@ -36,12 +36,12 @@ graph.getRelations = async ({ label, symbol }) => {
     const session = driver.session();
 
     try {
-        console.log('start');
+        // console.log('start');
         const relationQuery = `MATCH p=(n:${label} {name: $symbol})-[: ${relations[label]}]->() RETURN p`
         const params = { symbol };
         const result = await session.run(relationQuery, params);
 
-        console.log('finished find');
+        // console.log('finished find');
         return result.records;
 
     } catch (e) {
