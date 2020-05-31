@@ -96,6 +96,40 @@ router.post('/login', async (req, res, next) => {
   }
 })
 
+router.post('/makeRelation', async (req,res) => {
+
+  try {
+    const {user,org} = req.body
+
+    const session = driver.session();
+
+    try {
+
+      for (let i=0; i<org.length; i++) {
+
+        const cypher = "MATCH (a:User {name: $name}), (b:Organisation {name: $org}) CREATE (a)-[r:subscribe]->(b) RETURN r";
+        const params = { name: user, org: org[i] };
+
+        const result = await session.run(cypher, params);
+      }
+    } catch (e) {
+      console.log(e)
+    } finally {
+      await session.close()
+    }
+
+    res.send({
+      email: user
+    })
+
+  } catch (e) {
+    res.status(203).send({
+      error: e
+    })
+  }
+
+})
+
 router.post('/getUpdates', async (req, res) => {
   try{
     const {user} = req.body //take from req object
