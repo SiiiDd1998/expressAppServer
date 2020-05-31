@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const User = require('../models/Users')
 const CompanyResultDB = require('../models/CompanyResult')
+const RelationExtractor = require('../base/extractRelations')
 const passwordHasher = require('password-hasher')
 const neo4j = require('neo4j-driver');
 const driver = new neo4j.driver("bolt://52.252.99.100:7687", neo4j.auth.basic("neo4j", "NuV9sXUJzjve"));
@@ -130,6 +131,20 @@ router.post('/makeRelation', async (req,res) => {
 
 })
 
+router.get('/getAllCompanies', async (req, res) => {
+  try{
+    var companiesList = await CompanyResultDB.find({ });
+    console.log("done");
+    
+    console.log(companiesList);
+    
+    res.json(companiesList);
+  } catch(err) {
+    console.log(err);
+    
+  }
+});
+
 router.post('/getUpdates', async (req, res) => {
   try{
     const {user} = req.body //take from req object
@@ -161,7 +176,13 @@ router.post('/getUpdates', async (req, res) => {
       console.log('finding for ', symbol);
       
       const result = await CompanyResultDB.findOne({ symbol });
-      returnTable.push(result)
+      returnTable.push({
+        symbol: result.symbol,
+        company: result.company,
+        sentiment: RelationExtractor.sentimentToString(result.sentiment),
+        news: result.news,
+        date: result.date
+      })
     }
     res.json({ table: returnTable });
 

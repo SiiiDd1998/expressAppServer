@@ -6,6 +6,28 @@ var newsRelations = {}
 
 var relations = {}
 
+relations.sentimentToString = function(sentiment) {
+    sentiment = parseFloat(sentiment.value)
+    console.log(sentiment);
+    
+        if(sentiment == 0)
+            return "NO EFFECT";
+        else if( sentiment > 0.0 && sentiment <0.6)
+            return "LOW POSITIVE";
+        else if( sentiment >= .6 && sentiment <=1.0)
+            return "MEDIUM POSITIVE";
+        else if( sentiment > 1.0)
+            return "HIGH POSITIVE";
+        else if( sentiment >= -0.6 && sentiment <0)
+            return "LOW NEGATIVE";
+        else if( sentiment >= -1.0 && sentiment < -0.6)
+            return "MEDIUM NEGATIVE";
+        else if( sentiment < -1.0)
+            return "HIGH NEGATIVE";
+    
+    return "NONE"
+}
+
 function addToList(relations, sentiment, news) {
     for(relation of relations) {
         //get related organisation name
