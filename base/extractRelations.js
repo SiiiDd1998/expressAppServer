@@ -7,22 +7,23 @@ var newsRelations = {}
 var relations = {}
 
 relations.sentimentToString = function(sentiment) {
+    //convert the sentiment value to a string easily understandable by user
     sentiment = parseFloat(sentiment.value)
     console.log(sentiment);
     
         if(sentiment == 0)
             return "NO EFFECT";
-        else if( sentiment > 0.0 && sentiment <0.6)
+        else if( sentiment > 0.0 && sentiment <0.1)
             return "LOW POSITIVE";
-        else if( sentiment >= .6 && sentiment <=1.0)
+        else if( sentiment >= .1 && sentiment <=0.7)
             return "MEDIUM POSITIVE";
-        else if( sentiment > 1.0)
+        else if( sentiment > 0.7)
             return "HIGH POSITIVE";
-        else if( sentiment >= -0.6 && sentiment <0)
+        else if( sentiment >= -0.1 && sentiment <0)
             return "LOW NEGATIVE";
-        else if( sentiment >= -1.0 && sentiment < -0.6)
+        else if( sentiment >= -0.7 && sentiment < -0.1)
             return "MEDIUM NEGATIVE";
-        else if( sentiment < -1.0)
+        else if( sentiment < -0.7)
             return "HIGH NEGATIVE";
     
     return "NONE"
@@ -146,6 +147,7 @@ relations.extractRelations = function ({ Params }) {
 }
 
 relations.convertToParams = function({ relations }) {
+    //convert data obtained from bing api into format usable by relations.extractRelations
     var initParams = {}
     for (article of relations) {
         let Params =  article.sentiment.Params 
