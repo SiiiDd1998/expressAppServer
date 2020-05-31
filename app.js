@@ -22,7 +22,7 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/news', newsRouter);
+app.use('/evaluateImpact', newsRouter);
 app.use('/relations', relationsRouter);
 
 dbconnect()
